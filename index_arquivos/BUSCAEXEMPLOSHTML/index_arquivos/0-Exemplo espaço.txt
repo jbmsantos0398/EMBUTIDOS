@@ -1,0 +1,22 @@
+﻿https://cursos.alura.com.br/forum/topico-espaco-entre-duas-palavras-diferentes-no-html-314568
+
+<div style="word-spacing: 1px;">Espaçamento 1px entre palavras</div>
+
+<div style="word-spacing: 5px;">Espaçamento 5px entre palavras</div>
+
+<div style="word-spacing: 10px;">Espaçamento 10px entre palavras</div>
+
+<div style="word-spacing: 20px;">Espaçamento 20px entre palavras</div>
+
+<div style="word-spacing: 30px;">Espaçamento 30px entre palavras</div>
+
+<div style="word-spacing: 40px;">Espaçamento 40px entre palavras</div>
+
+
+
+
+&nbsp; - 1 espaço
+
+&ensp; - 2 espaços
+
+&emsp; - 4 espaços
