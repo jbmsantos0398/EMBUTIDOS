@@ -1,0 +1,5 @@
+&nbsp; - 1 espaço
+
+&ensp; - 2 espaços
+
+&emsp; - 4 espaços
