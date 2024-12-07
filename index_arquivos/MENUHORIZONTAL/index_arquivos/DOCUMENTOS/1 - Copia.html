@@ -80,9 +80,136 @@ div.scrollmenu a:hover {
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
+<CENTER><h2>
+DOCUMENTOS
+</h2></CENTER>
+<!------------------------------------------------------------------>
+<center>
+<!------------RELOGIO NOVO RELÓGIO BOM--------------->
+<hr/><u><html><head><title></title></head><body><SCRIPT LANGUAGE="JAVASCRIPT">
+<!--
+var now = new Date();
+var mName = now.getMonth() +1 ;
+var dName = now.getDay() +1;
+var dayNr = now.getDate();
+var yearNr=now.getYear();
+if(dName==1) {Day = "Domingo";}
+if(dName==2) {Day = "Segunda-feira";}
+if(dName==3) {Day = "Terça-feira";}
+if(dName==4) {Day = "Quarta-feira";}
+if(dName==5) {Day = "Quinta-feira";}
+if(dName==6) {Day = "Sexta-feira";}
+if(dName==7) {Day = "Sábado";}
+if(mName==1){Month = "Janeiro";}
+if(mName==2){Month = "Fevereiro";}
+if(mName==3){Month = "Março";}
+if(mName==4){Month = "Abril";}
+if(mName==5){Month = "Maio";}
+if(mName==6){Month = "Junho";}
+if(mName==7){Month = "Julho";}
+if(mName==8){Month = "Agosto";}
+if(mName==9){Month = "Setembro";}
+if(mName==10){Month = "Outubro";}
+if(mName==11){Month = "Novembro";}
+if(mName==12){Month = "Dezembro";}
+if(yearNr < 2000) {Year = 1900 + yearNr;}
+else {Year = yearNr;}
+var todaysDate =(" " + Day + ", " + dayNr + "/" + Month + "/" + Year);
+document.write('  '+todaysDate);
+//-->
+</SCRIPT><mark>
+<SPAN ID="Clock">00:00:00</SPAN>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+  var Elem = document.getElementById("Clock");
+  function Horario(){ 
+    var Hoje = new Date(); 
+    var Horas = Hoje.getHours(); 
+    if(Horas < 10){ 
+      Horas = "0"+Horas; 
+    } 
+    var Minutos = Hoje.getMinutes(); 
+    if(Minutos < 10){ 
+      Minutos = "0"+Minutos; 
+    } 
+    var Segundos = Hoje.getSeconds(); 
+    if(Segundos < 10){ 
+      Segundos = "0"+Segundos; 
+    } 
+    Elem.innerHTML = Horas+":"+Minutos+":"+Segundos; 
+    } 
+    window.setInterval("Horario()",1000);
+//-->
+</SCRIPT></body></html></mark></u><HR/>
+<!--------------------------------------------------------------->
 
-<h2>Horizontal Scrollable Menu</h2>
-<p>Resize the browser window to see the effect.</p>
+<!----------------------------------------------------------->
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var day_of_week = new Array('<FONT COLOR="#FF0000">DOM</FONT>','Seg','Ter','Qua','Qui','Sex','<FONT COLOR="#0101DF">Sab</FONT>');
+var month_of_year = new Array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
+var Calendar = new Date();
+var year = Calendar.getYear();       // Retorna o ano
+var month = Calendar.getMonth();    // Retorna mes (0-11)
+var today = Calendar.getDate();     // Retorna dias (1-31)
+var weekday = Calendar.getDay();   // Retorna dias (1-31)
+var DAYS_OF_WEEK = 7;    // "constant" para o numero de dias na semana
+var DAYS_OF_MONTH = 31;    // "constant" para o numero de dias no mes
+var cal;    // Usado para imprimir na tela
+Calendar.setDate(1);    // Comecar o calendario no dia '1'
+Calendar.setMonth(month);    // Comecar o calendario com o mes atual
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=5 BGCOLOR=#40FF00 BORDERCOLOR=#FFFF00><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+cal =  '<TABLE BORDER=5 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=#FF00FF><TR><TD>';
+cal += '<TABLE BORDER=4 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#2E64FE"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+cal += TD_end + TR_end;
+cal += TR_start;
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  week_day =Calendar.getDay();
+  if(week_day == 0)
+  cal += TR_start;
+  if(week_day != DAYS_OF_WEEK)
+  {
+  var day  = Calendar.getDate();
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+  else
+  cal += TD_start + day + TD_end;
+  }
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+  Calendar.setDate(Calendar.getDate()+1);
+}
+cal += '</TD></TR></TABLE></TABLE>';
+//  MOSTRAR CALENDARIO
+document.write(cal);
+//  End -->
+</SCRIPT>
+<!-------------------------------------------------------------->
+</center><HR/>
+<!-------------------------------------------------------------->
+
+
 
 
 
